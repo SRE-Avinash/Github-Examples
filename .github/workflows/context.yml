@@ -10,4 +10,8 @@ jobs:
         run: echo "Hello! $MY_ACTION"
         env:
           My_ACTION: ${{ github.action }}
-        
+      - name: Print github.actor
+        env:
+          MY_ACTOR: ${{ github.actor }}
+        run: echo "Triggered by $MY_ACTOR"
+
