@@ -34,10 +34,7 @@ jobs:
 
       - name: Convert job context to JSON
         run: echo "${{ toJSON(github.job) }}"
-
-      - name: Parse JSON string
-        run: echo "${{ fromJSON('{\"hello\":\"world\"}').hello }}"
-
+        
       - name: Hash files
         run: echo "${{ hashFiles('**/package-lock.json', '**/Gemfile.lock') }}"
 
