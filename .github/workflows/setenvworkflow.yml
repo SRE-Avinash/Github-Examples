@@ -9,8 +9,8 @@ jobs:
     steps:
       - name: Set dynamic env varibale
         run: |
-            echo "DYNAMIC_VAR=Hello from Hithub action" >> $GITHUB_ENV
+            echo "DYNAMIC_VAR=Hello from Github action" >> $GITHUB_ENV
 
       - name: use the nv varibale
         run: |
-            echo "the value of DYNAMIC_VAR iis: $DYNAMIC_VAR"
+            echo "The value of DYNAMIC_VAR is: $DYNAMIC_VAR"
