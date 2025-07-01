@@ -1,0 +1,16 @@
+name: shell script test
+
+on: ['push']
+
+jobs:
+  example-job:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./scripts
+    steps:
+      - name: Check out the repoo runner
+        uses: SRE-Avinash/Github-Examples@v4
+      - name: Run a script
+        run: ./my-script.sh
+        
