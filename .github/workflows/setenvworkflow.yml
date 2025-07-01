@@ -1,0 +1,16 @@
+name: Set env variable example
+
+on: ['push']
+
+jobs:
+  #name of the job
+  setup-and-use-env:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Set dynamic env varibale
+        run: |
+            echo "DYNAMIC_VAR=Hello from Hithub action" >> $GITHUB_ENV
+
+      - name: use the nv varibale
+        run: |
+            echo "the value of DYNAMIC_VAR iis: $DYNAMIC_VAR"
