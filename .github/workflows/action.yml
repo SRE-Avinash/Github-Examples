@@ -10,7 +10,7 @@ jobs:
 
     steps:
       - name: Hello world action step
-        uses: customAction-JS/@0.0.2
+        uses: SRE-Avinash/customAction-JS/@0.0.2
         id: hello
         with:
           name: 'Avinash'
